@@ -1,0 +1,14 @@
+.maker {
+  height: 100%;
+  width: 50%;
+  border-right: 0.1rem solid wheat;
+}
+
+@media screen and (max-width: 768px) {
+  .maker {
+    height: 50%;
+    width: 100%;
+    border-right: none;
+    border-bottom: 0.1rem solid wheat;
+  }
+}

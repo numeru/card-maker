@@ -1,0 +1,47 @@
+.header {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #385461;
+}
+
+.header_login {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #385461;
+}
+
+.logout {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.logo {
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.title {
+  color: white;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.logout:hover {
+  opacity: 0.8;
+}
