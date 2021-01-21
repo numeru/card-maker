@@ -8,7 +8,7 @@ const Login = ({ authService }) => {
   const history = useHistory();
   const goToMain = (userId) => {
     history.push({
-      pathname: "/Main",
+      pathname: "/maker",
       state: { id: userId },
     });
   };
@@ -19,10 +19,9 @@ const Login = ({ authService }) => {
   };
 
   useEffect(() => {
-    authService //
-      .onAuthChange((user) => {
-        user && goToMain(user.uid);
-      });
+    authService.onAuthChange((user) => {
+      user && goToMain(user.id);
+    });
   });
 
   return (
