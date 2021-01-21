@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  flex-wrap: wrap;
+  border-top: 1px solid black;
+  margin-bottom: 0.8rem;
+}
+
+.input,
+.textarea,
+.select,
+.button,
+.fileInput {
+  font-size: 0.8rem;
+  width: 100%;
+  border: 0;
+  padding: 0.5em;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  background: white;
+}
+
+.input,
+.select {
+  flex: 1 1 30%;
+}
+
+.fileInput {
+  padding: 0;
+  flex: 1 1 50%;
+}
+
+.submitBtn {
+  flex: 1 1 49%;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus,
+.button:focus {
+  outline: 0;
+}
+
+.textarea {
+  flex-basis: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    height: 100%;
+  }
+}
