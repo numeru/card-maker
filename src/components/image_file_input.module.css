@@ -21,6 +21,10 @@
   background-color: #e8e7e6;
 }
 
+.uploaded {
+  background-color: #ffeae8;
+}
+
 .loading {
   width: 1.5rem;
   height: 1.5rem;
