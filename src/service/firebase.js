@@ -3,10 +3,10 @@ import "firebase/auth";
 import "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA20l5-M5Fkpt2CSSThCOsB-wWbjPpzi_s",
-  authDomain: "business-card-maker-b9349.firebaseapp.com",
-  projectId: "business-card-maker-b9349",
-  databaseURL: "https://business-card-maker-b9349-default-rtdb.firebaseio.com",
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  databaseURL: process.env.REACT_APP_DATA_URL,
 };
 // Initialize Firebase
 const firebaseApp = firebase.initializeApp(firebaseConfig);
